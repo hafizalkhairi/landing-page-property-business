@@ -6,10 +6,11 @@ module.exports = {
       primary: "DM Serif Text",
       secondary: "Nunito",
       third: "Dancing Script",
+      poppins: "Poppins",
     },
     backgroundImage: {
-      hero: "url(/assets/hero/01.jpg)",
-      grid: "url(/assets/work/grid.png)",
+      hero: "url(/assets/hero/bg.jpg)",
+      grid: "url(/assets/grid.png)",
     },
 
     extend: {
