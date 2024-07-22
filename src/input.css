@@ -28,7 +28,7 @@ h6 {
 }
 
 .btn {
-  @apply h-[55px] px-[30px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2;
+  @apply h-[55px] px-[30px] transition-all duration-300 text-white rounded-br-[18px] rounded-tl-[18px] flex items-center gap-2;
 }
 
 .btn-primary {
@@ -36,6 +36,9 @@ h6 {
 }
 
 .btn-accent {
-  
   @apply bg-accent hover:bg-accent-hover;
+}
+
+.nav-is-open {
+  @apply h-[250px] p-6;
 }

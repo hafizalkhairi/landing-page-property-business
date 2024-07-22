@@ -40,32 +40,39 @@
   <body class="bg-gray-100">
     <!-- header -->
     <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
-      <div class="container px-4 mx-auto flex items-center border border-blue-500 justify-between h-full">
+      <div
+        class="container px-4 mx-auto flex items-center justify-between h-full"
+      >
         <!-- logo -->
-        <a class="border border-slate-600" href="">
+        <a class="" href="">
           <img src="assets/logo.svg" alt="" />
         </a>
 
         <!-- nav -->
-        <ul class="border border-slate-600 fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:items-center lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300  ">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Testiomonials</a></li>
-          <li><a href="">Our Work</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+        <nav>
+          <!-- nav mobile trigger -->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i
+              class="ri-menu-3-line text-3xl text-primary hover:text-accent-hover"
+            ></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden -t top-[90px] left-0 right-0 flex flex-col gap-4 lg:items-center lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonial">Testiomonials</a></li>
+            <li><a href="">Our Work</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <!-- page wrapper -->
     <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
-      <!-- <h1 class="h1 font-primary">Adelia Florist</h1> -->
-
-      <!-- grid img -->
-      <div
-        class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
-      ></div>
       <!-- hero -->
       <section
         class="hero h-[640px] xl:h-[640px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed lg:rounded-bl-[290px] relative z-20"
@@ -86,6 +93,215 @@
               Lorem ipsum dolor
               <i class="ri-arrow-right-line"></i>
             </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- steps -->
+      <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container px-4 mx-auto">
+          <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+            <!-- step 1 -->
+            <div class="text-center py-5 px-5 border">
+              <div class="mb-4">
+                <i class="ri-compasses-2-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5 font-primary font-bold text-3xl">
+                Lorem, ipsum dolor
+              </h3>
+              <p class="mb-5 max-w-md mx-auto font-poppins">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti neque ab veniam esse, nobis suscipit.
+              </p>
+              <a
+                href="#"
+                class="font-medium flex justify-center gap-2 font-poppins"
+                >Read More
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <!-- step 2 -->
+            <div class="text-center py-5 px-5 border">
+              <div class="mb-4">
+                <i class="ri-vip-crown-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5 font-primary font-bold text-3xl">
+                Lorem, ipsum dolor
+              </h3>
+              <p class="mb-5 max-w-md mx-auto font-poppins">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti neque ab veniam esse, nobis suscipit.
+              </p>
+              <a
+                href="#"
+                class="font-medium flex justify-center gap-2 font-poppins"
+                >Read More
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <!-- step 3 -->
+            <div class="text-center py-5 px-5 border">
+              <div class="mb-4">
+                <i class="ri-timer-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5 font-primary font-bold text-3xl">
+                Lorem, ipsum dolor
+              </h3>
+              <p class="mb-5 max-w-md mx-auto font-poppins">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti neque ab veniam esse, nobis suscipit.
+              </p>
+              <a
+                href="#"
+                class="font-medium flex justify-center gap-2 font-poppins"
+                >Read More
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--about  -->
+      <section
+        id="about"
+        class="about py-[3rem] mt-[80px] xl:mt-[200px] relative z-20 bg-gray-100"
+      >
+        <div class="container px-4 mx-auto">
+          <div
+            class="flex flex-col lg:flex-row text-center lg:text-left justify-between items-center gap-8 lg:gap-[74px]"
+          >
+            <div
+              class="flex-1 order-2 lg:order-none flex flex-col items-center lg:items-start gap-8"
+            >
+              <h2 class="h2 font-primary">
+                Lorem ipsum dolor sit amet consectetur.
+              </h2>
+              <p class="font-poppins">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus assumenda in excepturi itaque est blanditiis laborum
+                sunt aut aliquam harum!
+              </p>
+              <div
+                class="flex items-center justify-center lg:justify-start gap-4"
+              >
+                <div
+                  class="bg-accent/15 w-[93px] h-[93px] rounded-full flex justify-center items-center"
+                >
+                  <i class="ri-phone-fill text-accent text-4xl"></i>
+                </div>
+                <div class="text-left">
+                  <div class="text-2xl font-bold font-primary">
+                    0853 123 123
+                  </div>
+                  <div class="font-poppins">Call Us Anytime</div>
+                </div>
+              </div>
+              <button class="btn btn-primary font-poppins">
+                Lorem ipsum
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+            <div class="order-1 lg:order-none max-w-[453px] mx-auto">
+              <img src="assets/about/img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonial -->
+      <section
+        id="testimonial"
+        class="testiomonial mt-[80px] xl:mt-[200px] relative z-20"
+      >
+        <div class="container px-4 mx-auto bg-accent-secondary rounded-[70px]">
+          <div class="flex flex-col items-center pt-[88px] pb-[110px]">
+            <h2 class="h2 mb-9 text-center">What Client Say</h2>
+            <!-- slider -->
+            <div class="w-full">
+              <div class="swiper h-[400px]">
+                <div class="swiper-wrapper">
+                  <!-- slides 1-->
+                  <div class="swiper-slide border w-full">
+                    <!-- item -->
+                    <div
+                      class="w-full max-w-[370px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img src="assets/testimonial/01.png" alt="" />
+                        <div>
+                          <h3 class="h3">Chelsea Islan</h3>
+                          <div class="font-poppins">Jakarta, Indonesia</div>
+                        </div>
+                      </div>
+                      <p class="font-poppins border">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Repellendus, temporibus?
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slides 2-->
+                  <div class="swiper-slide border w-full">
+                    <!-- item -->
+                    <div
+                      class="w-full max-w-[370px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img src="assets/testimonial/02.png" alt="" />
+                        <div>
+                          <h3 class="h3">Chelsea Islan</h3>
+                          <div class="font-poppins">Jakarta, Indonesia</div>
+                        </div>
+                      </div>
+                      <p class="font-poppins border">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Repellendus, temporibus?
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slides 3-->
+                  <div class="swiper-slide border w-full">
+                    <!-- item -->
+                    <div
+                      class="w-full max-w-[370px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img src="assets/testimonial/03.png" alt="" />
+                        <div>
+                          <h3 class="h3">Chelsea Islan</h3>
+                          <div class="font-poppins">Jakarta, Indonesia</div>
+                        </div>
+                      </div>
+                      <p class="font-poppins border">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Repellendus, temporibus?
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slides 4-->
+                  <div class="swiper-slide border w-full">
+                    <!-- item -->
+                    <div
+                      class="w-full max-w-[370px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img src="assets/testimonial/03.png" alt="" />
+                        <div>
+                          <h3 class="h3">Chelsea Islan</h3>
+                          <div class="font-poppins">Jakarta, Indonesia</div>
+                        </div>
+                      </div>
+                      <p class="font-poppins border">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Repellendus, temporibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- swiper pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
